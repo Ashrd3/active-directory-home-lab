@@ -113,7 +113,7 @@ Applied to `IT` OU with item-level targeting scoped to the `IT-Admins` security 
 
 ## 🖧 Domain Join
 
-Successfully joined WS01 (Windows 10) to `ashlab.local`:
+Successfully joined WS01 (Windows 11) to `ashlab.local`:
 - Configured DNS to point to DC01 (`192.168.10.1`)
 - Joined domain via System Properties
 - Verified domain user login with GPO application
