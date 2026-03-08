@@ -10,7 +10,7 @@ A fully functional on-premises Active Directory environment built in VirtualBox 
 |---|---|
 | Oracle VirtualBox | Hypervisor / VM environment |
 | Windows Server 2022 (Eval) | Domain Controller (DC01) |
-| Windows 10 Enterprise (Eval) | Domain-joined workstation (WS01) |
+| Windows 11 Enterprise (Eval) | Domain-joined workstation (WS01) |
 | PowerShell ISE | Scripting & automation |
 | Active Directory Users & Computers | User/OU/Group management |
 | Group Policy Management Console | GPO configuration |
@@ -27,7 +27,7 @@ ashlab.local (Domain)
 │   ├── DNS Server
 │   └── Active Directory Domain Controller
 │
-└── WS01 (Windows 10 Enterprise)
+└── WS01 (Windows 11 Enterprise)
     ├── IP: 192.168.10.10
     └── Domain-joined workstation
 ```
