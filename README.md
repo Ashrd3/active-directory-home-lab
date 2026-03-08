@@ -153,7 +153,7 @@ active-directory-home-lab/
 
 ## 📌 Notes
 
-- Windows Server 2022 and Windows 10 Enterprise evaluation ISOs are free from Microsoft's Eval Center (180-day license)
+- Windows Server 2022 and Windows 11 Enterprise evaluation ISOs are free from Microsoft's Eval Center (180-day license)
 - VirtualBox Internal Network keeps the lab fully isolated from your home/office network
 - Default passwords used in this lab are for demonstration only — production environments require stronger credential management practices
 
