@@ -32,7 +32,7 @@ ashlab.local (Domain)
     └── Domain-joined workstation
 ```
 
-Both VMs are connected via VirtualBox **Internal Network (LabNet)** — isolated from the host network.
+Both VMs are connected via VirtualBox **Internal Network (LabNet)**  isolated from the host network.
 
 ![Server Manager Dashboard](screenshots/01-server-manager-dashboard.jpg)
 
