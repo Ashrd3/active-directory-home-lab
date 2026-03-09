@@ -59,7 +59,7 @@ Created a structured OU layout to mirror a real business environment:
 | Sales-Staff | Sales | Global Security |
 
 ### User Accounts
-Manually created one user and bulk-created 5 additional users via PowerShell CSV import:
+Manually created one user and bulk created 5 additional users via PowerShell CSV import:
 
 | Name | Username | Department |
 |---|---|---|
