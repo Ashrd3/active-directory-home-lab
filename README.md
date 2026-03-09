@@ -34,6 +34,10 @@ ashlab.local (Domain)
 
 Both VMs are connected via VirtualBox **Internal Network (LabNet)** — isolated from the host network.
 
+![Server Manager Dashboard](screenshots/01-server-manager-dashboard.jpg)
+
+![ashlab.local Domain Created](screenshots/02-ashlab-local-domain-created.jpg)
+
 ---
 
 ## ✅ What Was Configured
@@ -66,6 +70,8 @@ Manually created one user and bulk-created 5 additional users via PowerShell CSV
 | Priya Patel | p.patel | HR |
 | Mike Johnson | m.johnson | Sales |
 
+![Active Directory Users and Computers](screenshots/05-active-directory-users-computers.jpg)
+
 ---
 
 ## 💻 PowerShell Automation
@@ -83,6 +89,8 @@ Kevin,Brown,k.brown,IT,IT
 
 **Script places each user in the correct OU, sets a default password, and enables the account.**
 
+![Bulk Users Created via PowerShell](screenshots/04-bulk-users-created-powershell.jpg)
+
 ---
 
 ## 🔒 Group Policy Objects (GPOs)
@@ -97,11 +105,19 @@ Applied domain-wide to enforce password security standards.
 | Maximum password age | 90 days |
 | Enforce password history | 10 passwords remembered |
 
+![Password Policy GPO](screenshots/06-gpo-password-policy.jpg)
+
 ### 2. Desktop Lockdown
 Applied to `HR` and `Sales` OUs to restrict end-user configuration.
 
 - Prevent changing desktop background
 - Prevent access to Command Prompt
+
+![HR GPO Linked](screenshots/07-gpo-linked-hr-ou.jpg)
+
+![IT GPO Linked](screenshots/08-gpo-linked-it-ou.jpg)
+
+![Sales GPO Linked](screenshots/09-gpo-linked-sales-ou.jpg)
 
 ### 3. Drive Mapping (IT Admins)
 Applied to `IT` OU with item-level targeting scoped to the `IT-Admins` security group.
@@ -118,6 +134,10 @@ Successfully joined WS01 (Windows 11) to `ashlab.local`:
 - Joined domain via System Properties
 - Verified domain user login with GPO application
 
+![Domain Connectivity Ping Test](screenshots/03-domain-connectivity-ping-test.jpg)
+
+![Domain User Login Verified](screenshots/10-domain-user-login-verified.jpg)
+
 ---
 
 ## 📁 Repository Structure
@@ -132,10 +152,16 @@ active-directory-home-lab/
 │   ├── desktop-lockdown.md
 │   └── drive-mapping.md
 └── screenshots/
-    ├── aduc-ous.png
-    ├── aduc-users.png
-    ├── gpo-management.png
-    └── domain-join-success.png
+    ├── 01-server-manager-dashboard.jpg
+    ├── 02-ashlab-local-domain-created.jpg
+    ├── 03-domain-connectivity-ping-test.jpg
+    ├── 04-bulk-users-created-powershell.jpg
+    ├── 05-active-directory-users-computers.jpg
+    ├── 06-gpo-password-policy.jpg
+    ├── 07-gpo-linked-hr-ou.jpg
+    ├── 08-gpo-linked-it-ou.jpg
+    ├── 09-gpo-linked-sales-ou.jpg
+    └── 10-domain-user-login-verified.jpg
 ```
 
 ---
