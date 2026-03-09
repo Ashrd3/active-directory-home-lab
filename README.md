@@ -92,7 +92,7 @@ Applied domain-wide to enforce password security standards.
 
 | Setting | Value |
 |---|---|
-| Minimum password length | 10 characters |
+| Minimum password length | 12 characters |
 | Password complexity | Enabled |
 | Maximum password age | 90 days |
 | Enforce password history | 10 passwords remembered |
